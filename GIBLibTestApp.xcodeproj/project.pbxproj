@@ -13,6 +13,7 @@
 		43DFE58920B45EFD001B2D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DFE58820B45EFD001B2D92 /* Assets.xcassets */; };
 		43DFE58C20B45EFD001B2D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DFE58A20B45EFD001B2D92 /* LaunchScreen.storyboard */; };
 		43DFE58F20B45EFD001B2D92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DFE58E20B45EFD001B2D92 /* main.m */; };
+		43DFE59620B45F1B001B2D92 /* UITracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DFE59520B45F1B001B2D92 /* UITracking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		43DFE58B20B45EFD001B2D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43DFE58D20B45EFD001B2D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43DFE58E20B45EFD001B2D92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43DFE59520B45F1B001B2D92 /* UITracking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UITracking.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43DFE59620B45F1B001B2D92 /* UITracking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 		43DFE57E20B45EFC001B2D92 /* GIBLibTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				43DFE59520B45F1B001B2D92 /* UITracking.framework */,
 				43DFE57F20B45EFC001B2D92 /* AppDelegate.h */,
 				43DFE58020B45EFC001B2D92 /* AppDelegate.m */,
 				43DFE58220B45EFC001B2D92 /* ViewController.h */,
@@ -285,11 +289,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UZT9BL7VNS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GIBLibTestApp",
+				);
 				INFOPLIST_FILE = GIBLibTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = IA.GIBLibTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,11 +311,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UZT9BL7VNS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GIBLibTestApp",
+				);
 				INFOPLIST_FILE = GIBLibTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = IA.GIBLibTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
